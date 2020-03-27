@@ -8,6 +8,15 @@
             "port": 3306,
             "server": "localhost",
             "username": "root"
+        },
+        {
+            "database": "burger_db",
+            "dialect": "MySQL",
+            "name": "localhost",
+            "password": "root",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
         }
     ]
 }

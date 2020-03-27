@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Lorna-IT/Burger_ORM/issues"
   },
-  "homepage": "https://github.com/Lorna-IT/Burger_ORM#readme"
+  "homepage": "https://github.com/Lorna-IT/Burger_ORM#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.12.0"
+  }
 }

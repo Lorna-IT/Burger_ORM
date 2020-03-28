@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Lorna-IT/Burger_ORM#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "mysql": "^2.18.1",
     "node": "^13.12.0"
   }
 }

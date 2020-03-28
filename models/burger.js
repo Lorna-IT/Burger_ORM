@@ -2,7 +2,7 @@ const orm = require("../config/orm.js");
 
 const burger = {
   create: function(valArr, cb) {
-    orm.insertOne("burgers", ["burger_name", "devoured"], valArr, function(
+    orm.create("burgers", ["burger_name", "devoured"], valArr, function(
       res
     ) {
       cb(res);
@@ -10,20 +10,16 @@ const burger = {
   },
 
   all: function(cb) {
-    orm.selectAll("burgers", function(res) {
+    orm.all("burgers", function(res) {
       cb(res);
     });
   },
 
-  update: function(id, objColVals, cb) {
+  update: function(id, cb) {
     console.log("HERE!: " + id);
-    console.log(objColVals);
-
-    let condition = {
-      id: id
-    };
-
-    orm.updateOne("burgers", objColVals, condition, function(res) {
+    
+    
+    orm.update("burgers", id, function(res) {
       cb(res);
     });
   }
